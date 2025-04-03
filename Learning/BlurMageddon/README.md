@@ -33,7 +33,6 @@ This directory contains all files and subdirectories for the project.
 ### Folders
 - **plots\\**: Generated plots and visualizations of datasets and model results.
 - **datasets\\**: Contains input datasets, typically CSV files, used for experiments.
-- **logs\\**: Stores logs related to program execution and debugging.
 - **src\\**: Holds all source code files, including models, noise injection utilities, and visualization logic.
 - **tests\\**: Contains unit and integration tests to verify project functionality.
 
