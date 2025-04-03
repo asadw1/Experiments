@@ -31,8 +31,6 @@ This directory contains all files and subdirectories for the project.
 - **README.md**: Project documentation and overview.
 
 ### Folders
-- **bin\\**: Output directory for binaries and executables generated during build.
-- **obj\\**: Contains intermediate build files and object files.
 - **plots\\**: Generated plots and visualizations of datasets and model results.
 - **datasets\\**: Contains input datasets, typically CSV files, used for experiments.
 - **logs\\**: Stores logs related to program execution and debugging.
