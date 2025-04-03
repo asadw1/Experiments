@@ -1,6 +1,6 @@
 # Experiments
 
-Welcome to the **Experiments** repository! This project is dedicated to exploring and learning through various subprojects, all organized within the `Learning` folder. Whether you're acquiring new skills, testing ideas, or experimenting with concepts, this repository is your space for growth and discovery.
+Welcome to the **Experiments** repository! This project is dedicated to exploring and learning through various subprojects, all organized within the `Learning` folder. 
 
 ---
 
