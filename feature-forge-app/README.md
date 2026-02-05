@@ -4,6 +4,8 @@
 
 
 
+---
+
 A modular Angular 21 application demonstrating the **Strategy Pattern** for dynamic UI delivery and feature flagging. This project serves as an experimental sandbox for decoupled business logic and modern styling pipelines.
 
 ---
