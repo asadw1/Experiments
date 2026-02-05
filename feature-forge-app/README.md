@@ -10,7 +10,7 @@ A modular Angular 21 application demonstrating the **Strategy Pattern** for dyna
 
 ---
 
-### 🛠 Architecture: The Strategy Pattern
+### Architecture: The Strategy Pattern
 Instead of using complex conditionals within components, this app delegates UI logic to interchangeable strategy classes. This allows for seamless transitions between different user experiences:
 
 * **Standard Strategy**: The default, clean user experience.
