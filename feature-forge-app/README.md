@@ -19,7 +19,7 @@ Instead of using complex conditionals within components, this app delegates UI l
 
 ---
 
-### 🎨 Tech Stack
+### Tech Stack
 * **Framework**: Angular 21 (using the high-performance `esbuild` application builder).
 * **Styling**: 
     * **Tailwind CSS v4**: Utilizing the new CSS-native configuration and `@source` detection.
@@ -28,7 +28,7 @@ Instead of using complex conditionals within components, this app delegates UI l
 
 ---
 
-### 🚀 Getting Started
+### Getting Started
 
 **1. Install Dependencies**
 ```bash
@@ -49,7 +49,7 @@ npm run build
 
 ---
 
-### 📁 Key Files
+### Key Files
 
 * **`src/app/hero.strategy.ts`**: The interface defining the strategy contract.
 * **`src/app/hero.implementations.ts`**: Concrete logic for Standard, Experimental, and Maintenance modes.
@@ -58,7 +58,7 @@ npm run build
 
 ---
 
-### 📝 Note on Tailwind v4 Integration
+### Note on Tailwind v4 Integration
 
 This project successfully solves the **Sass vs. Tailwind v4** conflict in Angular by utilizing a parallel build path, ensuring that Tailwind's JIT engine can scan TypeScript strings for utility classes without interference from the Sass compiler.
 
