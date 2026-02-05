@@ -1,59 +1,64 @@
-# FeatureForgeApp
+# Feature Forge App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.1.
+<img width="1182" height="385" alt="image" src="https://github.com/user-attachments/assets/9926eebb-a922-4371-9e74-3b5ff09fc0ba" />
 
-## Development server
 
-To start a local development server, run:
 
+A modular Angular 21 application demonstrating the **Strategy Pattern** for dynamic UI delivery and feature flagging. This project serves as an experimental sandbox for decoupled business logic and modern styling pipelines.
+
+---
+
+### 🛠 Architecture: The Strategy Pattern
+Instead of using complex conditionals within components, this app delegates UI logic to interchangeable strategy classes. This allows for seamless transitions between different user experiences:
+
+* **Standard Strategy**: The default, clean user experience.
+* **Experimental Strategy**: A high-contrast A/B test variant (Indigo theme).
+* **Maintenance Strategy**: An operational toggle for system downtime (Red theme).
+
+---
+
+### 🎨 Tech Stack
+* **Framework**: Angular 21 (using the high-performance `esbuild` application builder).
+* **Styling**: 
+    * **Tailwind CSS v4**: Utilizing the new CSS-native configuration and `@source` detection.
+    * **Sass (SCSS)**: Preserved for component-level styling logic.
+* **PostCSS**: Configured via `.postcssrc.json` to bridge the Tailwind/Sass parallel pipeline.
+
+---
+
+### 🚀 Getting Started
+
+**1. Install Dependencies**
 ```bash
-ng serve
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+**2. Run Development Server**
 
 ```bash
-ng generate component component-name
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+**3. Build for Production**
 
 ```bash
-ng generate --help
+npm run build
 ```
 
-## Building
+---
 
-To build the project run:
+### 📁 Key Files
 
-```bash
-ng build
-```
+* **`src/app/hero.strategy.ts`**: The interface defining the strategy contract.
+* **`src/app/hero.implementations.ts`**: Concrete logic for Standard, Experimental, and Maintenance modes.
+* **`src/tailwind.css`**: The Tailwind v4 entry point with custom `@source` scanning for TypeScript files.
+* **`angular.json`**: Configured with a parallel style array to support both `.css` and `.scss` processing.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+### 📝 Note on Tailwind v4 Integration
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+This project successfully solves the **Sass vs. Tailwind v4** conflict in Angular by utilizing a parallel build path, ensuring that Tailwind's JIT engine can scan TypeScript strings for utility classes without interference from the Sass compiler.
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
