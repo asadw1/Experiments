@@ -1,4 +1,4 @@
-# Feature Forge App
+# Feature Forge
 
 <img width="1182" height="385" alt="image" src="https://github.com/user-attachments/assets/9926eebb-a922-4371-9e74-3b5ff09fc0ba" />
 
