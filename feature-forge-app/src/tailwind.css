@@ -1,0 +1,16 @@
+/* 1. The Core Engine */
+/* This single import replaces the old @tailwind base/components/utilities */
+@import "tailwindcss";
+
+/* 2. Source Detection */
+/* Since the engine isn't using a tailwind.config.js, you must tell it 
+   where to find the class names in your HeroStrategy implementations. */
+@source "./app/**/*.ts";
+@source "./app/**/*.html";
+
+/* 3. Theme Customization (Optional) */
+/* If you want to add custom colors or variables, you do it here 
+   using CSS variables instead of a JS config file. */
+@theme {
+  --color-brand-indigo: #4f46e5;
+}
